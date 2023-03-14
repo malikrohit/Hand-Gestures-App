@@ -21,4 +21,9 @@ document.getElementById("result").innerHTML = '<img id= "captured_image" src="'+
 
 }
 
-classifier = ml5.imageClassifier("",modelLoaded);
+classifier = ml5.imageClassifier("https://teachablemachine.withgoogle.com/models/rws7cc1yB/model.json",modelLoaded);
+
+function modelLoaded()
+{
+    console.log("modelLoaded")
+}
